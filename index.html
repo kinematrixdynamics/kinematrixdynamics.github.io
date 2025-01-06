@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flyer Promosi Jokinema</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+      body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: linear-gradient(135deg, #1e3c72, #2a5298);
+        padding: 20px;
+      }
+
+      .flyer {
+        width: 800px;
+        height: 800px;
+        background: linear-gradient(145deg, #ffffff, #f8f9ff);
+        border-radius: 30px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        padding: 40px;
+        box-sizing: border-box;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .header {
+        text-align: center;
+        color: #1e3c72;
+        position: relative;
+        padding: 10px 0;
+        border-bottom: 3px solid #2a5298;
+        margin-bottom: 20px;
+      }
+
+      .header h1 {
+        font-size: 2.5em;
+        margin: 0;
+        font-weight: 700;
+        background: linear-gradient(45deg, #1e3c72, #2a5298);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .header p {
+        font-size: 1.2em;
+        margin: 10px 0;
+        color: #2a5298;
+      }
+
+      .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+        flex: 1;
+        margin: 0;
+        padding: 10px;
+      }
+
+      .service-section {
+        background: rgba(255, 255, 255, 0.9);
+        padding: 15px;
+        border-radius: 20px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .service-section:hover {
+        transform: translateY(-5px);
+      }
+
+      .service-section h2 {
+        color: #1e3c72;
+        font-size: 1.4em;
+        margin: 0 0 10px 0;
+        padding-bottom: 5px;
+        border-bottom: 2px solid #2a5298;
+      }
+
+      .content ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        flex: 1;
+      }
+
+      .content ul li {
+        margin: 8px 0;
+        font-size: 0.9em;
+        color: #444;
+        display: flex;
+        align-items: center;
+        line-height: 1.2;
+      }
+
+      .content ul li:before {
+        content: "✓";
+        color: #2a5298;
+        font-weight: bold;
+        margin-right: 8px;
+        background: rgba(42, 82, 152, 0.1);
+        padding: 4px;
+        border-radius: 50%;
+      }
+
+      .contact {
+        text-align: center;
+        margin-top: 20px;
+        padding: 15px;
+        background: linear-gradient(145deg, #1e3c72, #2a5298);
+        border-radius: 20px;
+        color: white;
+      }
+
+      .contact h2 {
+        font-size: 1.4em;
+        margin: 0 0 10px 0;
+      }
+
+      .contact p {
+        margin: 5px 0;
+        font-size: 0.9em;
+      }
+
+      .contact a {
+        display: inline-block;
+        padding: 8px 20px;
+        background: white;
+        color: #1e3c72;
+        text-decoration: none;
+        border-radius: 30px;
+        font-weight: bold;
+        font-size: 1em;
+        transition: all 0.3s ease;
+        margin-top: 10px;
+      }
+
+      .contact a:hover {
+        transform: scale(1.05);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      @media (max-width: 850px) {
+        .flyer {
+          width: 100%;
+          height: auto;
+        }
+
+        .content {
+          grid-template-columns: 1fr;
+          grid-template-rows: repeat(4, auto);
+        }
+
+        .header h1 {
+          font-size: 2em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flyer">
+      <div class="header">
+        <h1>🎓 JOKINEMA 🔧</h1>
+        <p>Solusi Terpercaya untuk Skripsi Teknik Anda!</p>
+      </div>
+
+      <div class="content">
+        <div class="service-section">
+          <h2>🛠️ Layanan Utama</h2>
+          <ul>
+            <li>Bimbingan dan konsultasi perancangan alat skripsi</li>
+            <li>Pembuatan dan pengembangan alat penelitian</li>
+            <li>Bantuan troubleshooting dan debugging</li>
+            <li>Penulisan proposal dan laporan skripsi</li>
+            <li>Konsultasi metodologi penelitian</li>
+          </ul>
+        </div>
+
+        <div class="service-section">
+          <h2>💻 Hardware & Software</h2>
+          <ul>
+            <li>Mikrokontroler dan Embedded System</li>
+            <li>Sistem Kendali Otomatis</li>
+            <li>Sensor dan Aktuator</li>
+            <li>Computer Vision & Image Processing</li>
+            <li>Machine Learning & AI</li>
+          </ul>
+        </div>
+
+        <div class="service-section">
+          <h2>📱 Pengembangan Aplikasi</h2>
+          <ul>
+            <li>Aplikasi Mobile Android & iOS</li>
+            <li>Website Responsif</li>
+            <li>Sistem Informasi</li>
+            <li>IoT & Smart Systems</li>
+            <li>Database Management</li>
+          </ul>
+        </div>
+
+        <div class="service-section">
+          <h2>📚 Penulisan & Dokumentasi</h2>
+          <ul>
+            <li>Proposal Skripsi Teknik</li>
+            <li>Laporan Penelitian Ilmiah</li>
+            <li>Metodologi Penelitian</li>
+            <li>Analisis Data & Statistik</li>
+            <li>Dokumentasi Teknis</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="contact">
+        <h2>💬 Hubungi Kami Sekarang!</h2>
+        <p>Konsultasikan Ide Skripsi Anda dengan Tim Ahli Kami</p>
+        <a href="https://wa.me/62895385034761" target="_blank">
+          📱 WhatsApp: +62 895-3850-34761
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
